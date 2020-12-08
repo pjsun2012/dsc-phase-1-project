@@ -55,9 +55,11 @@ Finally, I summed each columns and sorted values by descending to have the top t
 
 For the second part of the question, I only kept top 10 popular movie genres and tried to see how their counts vary by year. In order to do that, I dropped all the columns of movies genres which are not in the top 10 group. After joined another dataframe with start_year by movies name, I got a new dataframe having all the data that I need. 
 
+![](README_Charts/Picture5.png)
+
 Grouped the data by start_year and summed all the columns by each movie genres. From there, I was able to compile the following chart.
 
-![](README_Charts/Picture5.png)
+![](README_Charts/Picture6.png)
 
 Based the above data, the plot of count of top 10 movie genres by year is presented by the following figure. 
 
@@ -77,7 +79,7 @@ Based the above data, the plot of count of top 10 movie genres by year is presen
 
 The data came from tn.moive.budges.csv file. I started with replacing ‘$’ and ‘,’ of all the data in production_budget, domestic_gross and worldwide_gross columns by “” and then changing the data type from string to integer. In order to get movie profit, I created another column with the data from worldwide_gross minus production_budget. Furthermore, I also explore the ROI for the top 10 profitable movies. I created RIO column with the data calculated from movie profit divide by production_budget.
 
-![](README_Charts/Picture6.png)
+![](README_Charts/Picture7.png)
 
 ![](images/5.png)
 
@@ -87,15 +89,15 @@ The data came from tn.moive.budges.csv file. I started with replacing ‘$’ an
 
 After finding the top 10 profitable movies over the past 10 years, I want to see the relationship between them and their audience ratings. I started with creating a new dataframe only with top 10 profitable movies. And then dropped all the columns that I don’t need. From there, I got the following chart.
 
-![](README_Charts/Picture7.png)
+![](README_Charts/Picture8.png)
 
 For the movie ratings, the data from **tmdb.movies.csv**. The first step, I also dropped the columns that I don’t need. Then, I did right join for above movie_profit and movie_ratings dataframes by index. 
 
-![](README_Charts/Picture8.png)
+![](README_Charts/Picture9.png)
 
 As seen from above chart, there are missing values, which are very important information that needs to fill. After looking for each of them from the web, I filled the right information for each missing value. 
 
-![](README_Charts/Picture9.png)
+![](README_Charts/Picture10.png)
 
 Based on the data of the above chart, the following figure shows the relationship between movie profit and audience ratings.
 
