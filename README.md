@@ -41,15 +41,15 @@ Second, I looked at gross revenue of the other main movie studios in the industr
 
 The data came from **IMDb.title.basic.csv** file. To clean the data, I first dropped the ‘runtime_munutes, ‘original_title’ columns that I don’t need. Then I found that only 3.7% of genres data is missing, therefore, I chose to drop all the missing data. Next, I also dropped ‘tconst’ column to further clean the data set. 
 
-![image.png](attachment:image.png)
+![](README_Charts/Picture2.png)
 
 All the columns names are self explanatory. As seen in the above dataframe, the genre column has data with comma separators which cannot be processed for recommendations as such. Hence, I need to generate columns for every genre type such that if the movie belongs to that genre it value will be 1 otherwise 0. After a few rounds of data processing, I created a new data frame with columns of each genre. For each movie, if the movie belongs to that genre, the value will be 1. 
 
-![image.png](attachment:image.png)
+![](README_Charts/Picture3.png)
 
 Finally, I summed each columns and sorted values by descending to have the top ten most popular movie genres.  
 
-![image.png](attachment:image.png)
+![](README_Charts/Picture4.png)
 
 ![image.png](images/3.png)
 
@@ -57,7 +57,7 @@ For the second part of the question, I only kept top 10 popular movie genres and
 
 Grouped the data by start_year and summed all the columns by each movie genres. From there, I was able to compile the following chart.
 
-![image.png](attachment:image.png)
+![](README_Charts/Picture5.png)
 
 Based the above data, the plot of count of top 10 movie genres by year is presented by the following figure. 
 
@@ -77,7 +77,7 @@ Based the above data, the plot of count of top 10 movie genres by year is presen
 
 The data came from tn.moive.budges.csv file. I started with replacing ‘$’ and ‘,’ of all the data in production_budget, domestic_gross and worldwide_gross columns by “” and then changing the data type from string to integer. In order to get movie profit, I created another column with the data from worldwide_gross minus production_budget. Furthermore, I also explore the ROI for the top 10 profitable movies. I created RIO column with the data calculated from movie profit divide by production_budget.
 
-![image.png](attachment:image.png)
+![](README_Charts/Picture6.png)
 
 ![](images/5.png)
 
@@ -87,15 +87,15 @@ The data came from tn.moive.budges.csv file. I started with replacing ‘$’ an
 
 After finding the top 10 profitable movies over the past 10 years, I want to see the relationship between them and their audience ratings. I started with creating a new dataframe only with top 10 profitable movies. And then dropped all the columns that I don’t need. From there, I got the following chart.
 
-![image.png](attachment:image.png)
+![](README_Charts/Picture7.png)
 
 For the movie ratings, the data from **tmdb.movies.csv**. The first step, I also dropped the columns that I don’t need. Then, I did right join for above movie_profit and movie_ratings dataframes by index. 
 
-![image.png](attachment:image.png)
+![](README_Charts/Picture8.png)
 
 As seen from above chart, there are missing values, which are very important information that needs to fill. After looking for each of them from the web, I filled the right information for each missing value. 
 
-![image.png](attachment:image.png)
+![](README_Charts/Picture9.png)
 
 Based on the data of the above chart, the following figure shows the relationship between movie profit and audience ratings.
 
