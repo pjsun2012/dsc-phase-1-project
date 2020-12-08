@@ -26,7 +26,7 @@ The data came from **IMDb.title.basic.csv file**. For the data behind this analy
 
 Second, I looked at gross revenue of the other main movie studios in the industry. The data is from **bom.moive_gross.csv**. To start data cleaning, I dropped all missing values of studio and domestic gross, since their missing value ratio is only 1.4% and 0.8%. The missing values of foreign gross is almost 40%. Obviously, dropping all of them is not an option. After did some research about those movies’ foreign gross, most of them are not released globally. It does make sense that I chose to fill all the missing value of foreign gross as 0. After another round of data cleaning for foreign gross data (replaced “,” in the numbers and changed data type from object to float), I had the total gross column derived from domestic gross plus foreign gross. For this question, I focused on the Top 10 movie studios total gross revenue. From here, I got the following chart and Figure.
 
-![image.png](attachment:image.png)
+![](README_Charts/Picture1.png)
 
 ![](images/2.png)
 
